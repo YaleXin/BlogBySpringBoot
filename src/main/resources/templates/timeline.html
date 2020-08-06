@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width,initial-scale=1.0">
+    <title>时间轴</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.2.4/semantic.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/css/me.css">
+</head>
+
+<body>
+<link rel="stylesheet" href="../static/css/timeline.css" th:href="@{/css/timeline.css}">
+<style>
+    .m-li-a{
+        color: #1abc9c;
+        border-bottom: 1px solid #1abc9c;
+    }
+</style>
+<!-- 导航 -->
+<nav th:replace="_fragments :: menu(6)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item">Blog</h2>
+            <a href="#" class="m-item item m-mobile-hide"><i class=" home icon"></i>首页</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class=" idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class=" tags icon"></i>标签</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class=" clone icon"></i>归档</a>
+            <a href="#" class="active m-item item m-mobile-hide"><i class=" info icon"></i>关于我</a>
+            <div class="right item m-item m-mobile-hide">
+                <div class="ui icon inverted transparent input">
+                    <input type="text" placeholder="Search ...">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui black icon button m-right-top m-mobile-show menu toggle">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<!-- 运行时间统计 -->
+<div class="m-padded-tb-big m-container">
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <div class="ui teal  top attached segment">
+                <div class="ui middle center aligned grid">
+                    <div class="column">
+                        <h3 class="ui teal header">本博客已运行：</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="ui bottom attached segment middle center aligned ">
+                <h3 class="ui header">
+                    <span class="ui orange header" id="days"></span>天
+                    <span class="ui orange header" id="hours"></span>时
+                    <span class="ui orange header" id="minutes"></span>分
+                    <span class="ui orange header" id="seconds"></span>秒</h3>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<!-- 时间轴信息 -->
+<div class="m-padded-tb-big m-container">
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <div class="ui teal  top attached segment">
+                <div class="ui middle center aligned grid">
+                    <div class="column">
+                        <h3 class="ui teal header">我的博客历程</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="ui bottom attached segment ">
+                <div id=" content">
+                    <ul class="timeline">
+                        <li class="event">
+                            <p><i class="calendar icon"></i>2020年8月3日</p>
+                            <h2 class="strong">前端后台登录增加MD5加密js，避免管理员密码明文传输</h2>
+                        </li>
+                        <li class="event">
+                            <p><i class="calendar icon"></i>2020年8月2日</p>
+                            <h2 class="strong">在简书的某一篇<a target="_blank" class="m-li-a"
+                                                         href="//www.jianshu.com/p/c9c719821198">文章</a>中找到一个时间轴页面，实际项目地址在
+                                <a target="_blank" class="m-li-a" href="//codepen.io/mo7amedk7alid29/pen/dRoMwo">这里</a>
+                                ，并将其改造加入我的博客中</h2>
+                        </li>
+                        <li class="event">
+                            <p><i class="calendar icon"></i>2020年8月2日</p>
+                            <h2 class="strong">增加友情链接页面</h2>
+                        </li>
+                        <li class="event">
+                            <p><i class="calendar icon"></i>2020年8月1日</p>
+                            <h2 class="strong">优化邮件通知模板</h2>
+                        </li>
+                        <li class="event">
+                            <p><i class="calendar icon"></i>2020年7月30日</p>
+                            <h2 class="strong">加入简单评论管理功能</h2>
+                        </li>
+                        <li class="event">
+                            <p><i class="calendar icon"></i>2020年7月29日</p>
+                            <h2 class="strong">文章页面加入fancybox插件</h2>
+                        </li>
+                        <li class="event">
+                            <p><i class="calendar icon"></i>2020年7月28日</p>
+                            <h2 class="strong">在李仁密老师的<a target="_blank" class="m-li-a"
+                                                         href="//www.bilibili.com/video/BV13t411T72J">视频</a>下，利用Spring
+                                Boot初步完成本博客的搭建</h2>
+                        </li>
+                        <li class="event">
+                            <p><i class="calendar icon"></i>2020年3月23日</p>
+                            <h2 class="strong">利用Typecho搭建了第一个<a target="_blank" class="m-li-a"
+                                                                 href="//www.yalexin.top/">动态博客</a></h2>
+                        </li>
+                        <li class="event">
+                            <p><i class="calendar icon"></i>2020年2月21日</p>
+                            <h2 class="strong">利用Hexo搭建了第一个<a target="_blank" class="m-li-a" href="//yalexin.gitee.io/">静态博客</a>
+                            </h2>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<br>
+<br>
+<!-- 底部 -->
+<footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui container center aligned ">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="../static/images/WeChat.jpg" class="ui rounded image" alt="" style="width: 100px;">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">用户故事</a>
+                    <a href="#" class="item">用户故事</a>
+                    <a href="#" class="item">用户故事</a>
+                </div>
+
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">请联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Email:me@yalexin.top</a>
+                    <a href="#" class="item">qq:495592364</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">介绍</h4>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">这是SpringBoot + semantic-ui 开发的个人博客</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright©2020-2020 by Yalexin</p>
+    </div>
+</footer>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+<script src="../static/js/myAnimation.js" th:src="@{/js/myAnimation.js}"></script>
+<script>
+    $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+
+</script>
+<script src="../static/js/timeline.js" th:src="@{/js/timeline.js}"></script>
+</body>
+
+</html>

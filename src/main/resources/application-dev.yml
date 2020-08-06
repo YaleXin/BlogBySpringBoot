@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:
+    username: root
+    password: 123456
+
+logging:
+  level:
+    root: info
+    com.yalexin: debug
+  file: log/blog-dev.log

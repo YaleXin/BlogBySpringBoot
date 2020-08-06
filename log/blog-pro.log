@@ -1,0 +1,4 @@
+2020-07-22 10:27:07.921  INFO 7440 --- [restartedMain] com.yalexin.BlogApplication              : Starting DemoApplication on DESKTOP-E2AV1HM with PID 7440 (E:\chromeDownload\CrazyArcade-master\blog\target\classes started by YaleXin in E:\chromeDownload\CrazyArcade-master\blog)
+2020-07-22 10:27:07.921  INFO 7440 --- [restartedMain] com.yalexin.BlogApplication              : The following profiles are active: pro
+2020-07-22 10:27:22.623  WARN 7440 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-07-22 10:27:23.733  INFO 7440 --- [restartedMain] com.yalexin.BlogApplication              : Started DemoApplication in 16.781 seconds (JVM running for 17.755)

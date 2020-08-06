@@ -1,0 +1,236 @@
+2020-08-06 08:04:54.494  INFO 1740 --- [restartedMain] com.yalexin.BlogApplication              : Starting BlogApplication on DESKTOP-E2AV1HM with PID 1740 (C:\Users\YaleXin\IdeaProjects\blog_copy\target\classes started by YaleXin in C:\Users\YaleXin\IdeaProjects\blog_copy)
+2020-08-06 08:04:54.589 DEBUG 1740 --- [restartedMain] com.yalexin.BlogApplication              : Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-08-06 08:04:54.591  INFO 1740 --- [restartedMain] com.yalexin.BlogApplication              : The following profiles are active: dev
+2020-08-06 08:04:55.217  INFO 1740 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-06 08:04:55.219  INFO 1740 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-06 08:05:00.959  INFO 1740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-06 08:05:01.263  INFO 1740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 260ms. Found 5 JPA repository interfaces.
+2020-08-06 08:05:05.249  INFO 1740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-06 08:05:05.390  INFO 1740 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-06 08:05:05.390  INFO 1740 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-06 08:05:05.775  INFO 1740 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-06 08:05:05.781  INFO 1740 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 10545 ms
+2020-08-06 08:05:06.811  INFO 1740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Starting...
+2020-08-06 08:05:08.469  INFO 1740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Start completed.
+2020-08-06 08:05:08.793  INFO 1740 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-08-06 08:05:09.240  INFO 1740 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.17.Final}
+2020-08-06 08:05:09.245  INFO 1740 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-08-06 08:05:10.002  INFO 1740 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-08-06 08:05:11.406  INFO 1740 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-06 08:05:13.678  INFO 1740 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-06 08:05:15.222  INFO 1740 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-08-06 08:05:17.728  INFO 1740 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 08:05:17.857  WARN 1740 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-06 08:05:18.053  INFO 1740 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-06 08:05:19.159  INFO 1740 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-06 08:05:19.339  INFO 1740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-06 08:05:19.345  INFO 1740 --- [restartedMain] com.yalexin.BlogApplication              : Started BlogApplication in 32.968 seconds (JVM running for 34.948)
+2020-08-06 08:06:06.078  INFO 1740 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-06 08:06:06.079  INFO 1740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-06 08:06:06.106  INFO 1740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 27 ms
+2020-08-06 08:06:07.106  INFO 1740 --- [http-nio-8080-exec-1] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.IndexController.index', args=[Page request [number: 0, size 5, sort: createTime: DESC], {}]}
+2020-08-06 08:06:08.342  WARN 1740 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-08-06 08:06:08.465  WARN 1740 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-08-06 08:06:08.686  INFO 1740 --- [http-nio-8080-exec-1] com.yalexin.aspect.LogAspect             : result------>index
+2020-08-06 08:06:10.703  INFO 1740 --- [http-nio-8080-exec-8] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.IndexController.newblogs', args=[{}]}
+2020-08-06 08:06:10.905  INFO 1740 --- [http-nio-8080-exec-8] com.yalexin.aspect.LogAspect             : result------>_fragments :: newblogList
+2020-08-06 08:06:12.252  INFO 1740 --- [http-nio-8080-exec-10] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/timeline', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.TimelineController.timeline', args=[]}
+2020-08-06 08:06:12.266  INFO 1740 --- [http-nio-8080-exec-10] com.yalexin.aspect.LogAspect             : result------>timeline
+2020-08-06 08:06:12.766  INFO 1740 --- [http-nio-8080-exec-9] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.IndexController.newblogs', args=[{}]}
+2020-08-06 08:06:12.945  INFO 1740 --- [http-nio-8080-exec-9] com.yalexin.aspect.LogAspect             : result------>_fragments :: newblogList
+2020-08-06 08:06:15.381  INFO 1740 --- [http-nio-8080-exec-8] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/links', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.FriendsController.friends', args=[{}]}
+2020-08-06 08:06:15.392  INFO 1740 --- [http-nio-8080-exec-8] com.yalexin.aspect.LogAspect             : result------>links
+2020-08-06 08:06:15.949  INFO 1740 --- [http-nio-8080-exec-6] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.IndexController.newblogs', args=[{}]}
+2020-08-06 08:06:16.134  INFO 1740 --- [http-nio-8080-exec-6] com.yalexin.aspect.LogAspect             : result------>_fragments :: newblogList
+2020-08-06 08:06:16.754  INFO 1740 --- [http-nio-8080-exec-3] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.ArchiveShowController.archives', args=[{}]}
+2020-08-06 08:06:17.654  INFO 1740 --- [http-nio-8080-exec-3] com.yalexin.aspect.LogAspect             : result------>archives
+2020-08-06 08:06:18.124  INFO 1740 --- [http-nio-8080-exec-9] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.IndexController.newblogs', args=[{}]}
+2020-08-06 08:06:18.234  INFO 1740 --- [http-nio-8080-exec-9] com.yalexin.aspect.LogAspect             : result------>_fragments :: newblogList
+2020-08-06 08:08:34.864  INFO 1740 --- [http-nio-8080-exec-2] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.IndexController.index', args=[Page request [number: 0, size 5, sort: createTime: DESC], {}]}
+2020-08-06 08:08:36.124  INFO 1740 --- [http-nio-8080-exec-2] com.yalexin.aspect.LogAspect             : result------>index
+2020-08-06 08:08:36.678  INFO 1740 --- [http-nio-8080-exec-9] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.IndexController.newblogs', args=[{}]}
+2020-08-06 08:08:36.994  INFO 1740 --- [http-nio-8080-exec-9] com.yalexin.aspect.LogAspect             : result------>_fragments :: newblogList
+2020-08-06 08:08:39.289  INFO 1740 --- [http-nio-8080-exec-10] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.ArchiveShowController.archives', args=[{}]}
+2020-08-06 08:08:40.601  INFO 1740 --- [http-nio-8080-exec-10] com.yalexin.aspect.LogAspect             : result------>archives
+2020-08-06 08:08:40.884  INFO 1740 --- [http-nio-8080-exec-5] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.IndexController.newblogs', args=[{}]}
+2020-08-06 08:08:41.193  INFO 1740 --- [http-nio-8080-exec-5] com.yalexin.aspect.LogAspect             : result------>_fragments :: newblogList
+2020-08-06 08:09:09.971  INFO 1740 --- [http-nio-8080-exec-6] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.ArchiveShowController.archives', args=[{}]}
+2020-08-06 08:09:11.321  INFO 1740 --- [http-nio-8080-exec-6] com.yalexin.aspect.LogAspect             : result------>archives
+2020-08-06 08:09:11.637  INFO 1740 --- [http-nio-8080-exec-7] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.IndexController.newblogs', args=[{}]}
+2020-08-06 08:09:12.063  INFO 1740 --- [http-nio-8080-exec-7] com.yalexin.aspect.LogAspect             : result------>_fragments :: newblogList
+2020-08-06 08:15:53.529  INFO 1740 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-06 08:15:53.529  INFO 1740 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-06 08:15:53.560  INFO 1740 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Shutdown initiated...
+2020-08-06 08:15:53.560  INFO 1740 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Shutdown completed.
+2020-08-06 08:15:54.978  INFO 1740 --- [restartedMain] com.yalexin.BlogApplication              : Starting BlogApplication on DESKTOP-E2AV1HM with PID 1740 (C:\Users\YaleXin\IdeaProjects\blog_copy\target\classes started by YaleXin in C:\Users\YaleXin\IdeaProjects\blog_copy)
+2020-08-06 08:15:54.978 DEBUG 1740 --- [restartedMain] com.yalexin.BlogApplication              : Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-08-06 08:15:54.978  INFO 1740 --- [restartedMain] com.yalexin.BlogApplication              : The following profiles are active: dev
+2020-08-06 08:15:56.517  INFO 1740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-06 08:15:56.689  INFO 1740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 172ms. Found 5 JPA repository interfaces.
+2020-08-06 08:15:57.814  INFO 1740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-06 08:15:57.845  INFO 1740 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-06 08:15:57.861  INFO 1740 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-06 08:15:57.955  INFO 1740 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-06 08:15:57.955  INFO 1740 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2977 ms
+2020-08-06 08:15:58.502  INFO 1740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Starting...
+2020-08-06 08:15:59.783  INFO 1740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Start completed.
+2020-08-06 08:15:59.814  INFO 1740 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-08-06 08:16:00.548  INFO 1740 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-06 08:16:00.986  INFO 1740 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-06 08:16:01.686  INFO 1740 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-08-06 08:16:03.662  INFO 1740 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 08:16:03.711  WARN 1740 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-06 08:16:03.893  INFO 1740 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-06 08:16:04.703  INFO 1740 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-06 08:16:04.773  INFO 1740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-06 08:16:04.782  INFO 1740 --- [restartedMain] com.yalexin.BlogApplication              : Started BlogApplication in 9.976 seconds (JVM running for 680.386)
+2020-08-06 08:16:04.794  INFO 1740 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-08-06 09:22:40.094  INFO 1740 --- [Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-06 09:22:40.110  INFO 1740 --- [Thread-10] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-06 09:22:40.126  INFO 1740 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Shutdown initiated...
+2020-08-06 09:22:40.126  INFO 1740 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Shutdown completed.
+2020-08-06 09:22:41.752  INFO 1740 --- [restartedMain] com.yalexin.BlogApplication              : Starting BlogApplication on DESKTOP-E2AV1HM with PID 1740 (C:\Users\YaleXin\IdeaProjects\blog_copy\target\classes started by YaleXin in C:\Users\YaleXin\IdeaProjects\blog_copy)
+2020-08-06 09:22:41.752 DEBUG 1740 --- [restartedMain] com.yalexin.BlogApplication              : Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-08-06 09:22:41.752  INFO 1740 --- [restartedMain] com.yalexin.BlogApplication              : The following profiles are active: dev
+2020-08-06 09:22:43.665  INFO 1740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-06 09:22:43.774  INFO 1740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109ms. Found 5 JPA repository interfaces.
+2020-08-06 09:22:44.446  INFO 1740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-06 09:22:44.493  INFO 1740 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-06 09:22:44.493  INFO 1740 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-06 09:22:45.071  INFO 1740 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-06 09:22:45.071  INFO 1740 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3319 ms
+2020-08-06 09:22:45.274  INFO 1740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Starting...
+2020-08-06 09:22:46.430  INFO 1740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Start completed.
+2020-08-06 09:22:46.634  INFO 1740 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-08-06 09:22:46.837  INFO 1740 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-06 09:22:47.899  INFO 1740 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-06 09:22:48.540  INFO 1740 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-08-06 09:22:50.102  INFO 1740 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 09:22:50.149  WARN 1740 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-06 09:22:50.290  INFO 1740 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-06 09:22:50.883  INFO 1740 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-06 09:22:50.977  INFO 1740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-06 09:22:50.977  INFO 1740 --- [restartedMain] com.yalexin.BlogApplication              : Started BlogApplication in 9.428 seconds (JVM running for 4686.588)
+2020-08-06 09:22:50.977  INFO 1740 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-08-06 09:22:53.118  INFO 11020 --- [main] com.yalexin.BlogApplicationTests         : Starting BlogApplicationTests on DESKTOP-E2AV1HM with PID 11020 (started by YaleXin in C:\Users\YaleXin\IdeaProjects\blog_copy)
+2020-08-06 09:22:53.133 DEBUG 11020 --- [main] com.yalexin.BlogApplicationTests         : Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-08-06 09:22:53.133  INFO 11020 --- [main] com.yalexin.BlogApplicationTests         : The following profiles are active: dev
+2020-08-06 09:22:55.352  INFO 11020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-06 09:22:55.633  INFO 11020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 265ms. Found 5 JPA repository interfaces.
+2020-08-06 09:23:02.071  INFO 11020 --- [main] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Starting...
+2020-08-06 09:23:05.086  INFO 11020 --- [main] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Start completed.
+2020-08-06 09:23:05.336  INFO 11020 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-08-06 09:23:05.492  INFO 11020 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.17.Final}
+2020-08-06 09:23:05.492  INFO 11020 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-08-06 09:23:06.164  INFO 11020 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-08-06 09:23:07.102  INFO 11020 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-06 09:23:09.008  INFO 11020 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-06 09:23:10.305  INFO 11020 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-08-06 09:23:14.273  INFO 11020 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 09:23:14.476  WARN 11020 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-06 09:23:14.695  INFO 11020 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-06 09:23:15.586  INFO 11020 --- [main] com.yalexin.BlogApplicationTests         : Started BlogApplicationTests in 24.187 seconds (JVM running for 32.053)
+2020-08-06 09:23:16.148  INFO 11020 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-06 09:23:16.148  INFO 11020 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-06 09:23:16.164  INFO 11020 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Shutdown initiated...
+2020-08-06 09:23:16.258  INFO 11020 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Shutdown completed.
+2020-08-06 09:40:08.109  INFO 1740 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-06 09:40:08.110  INFO 1740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-06 09:40:08.122  INFO 1740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-08-06 09:40:08.128  INFO 1740 --- [http-nio-8080-exec-1] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.ArchiveShowController.archives', args=[{}]}
+2020-08-06 09:40:09.620  INFO 1740 --- [http-nio-8080-exec-1] com.yalexin.aspect.LogAspect             : result------>archives
+2020-08-06 09:40:10.142  INFO 1740 --- [http-nio-8080-exec-6] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.IndexController.newblogs', args=[{}]}
+2020-08-06 09:40:10.474  INFO 1740 --- [http-nio-8080-exec-6] com.yalexin.aspect.LogAspect             : result------>_fragments :: newblogList
+2020-08-06 09:40:24.968  INFO 1740 --- [http-nio-8080-exec-7] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.ArchiveShowController.archives', args=[{}]}
+2020-08-06 09:40:26.250  INFO 1740 --- [http-nio-8080-exec-7] com.yalexin.aspect.LogAspect             : result------>archives
+2020-08-06 09:40:26.560  INFO 1740 --- [http-nio-8080-exec-1] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.IndexController.newblogs', args=[{}]}
+2020-08-06 09:40:26.881  INFO 1740 --- [http-nio-8080-exec-1] com.yalexin.aspect.LogAspect             : result------>_fragments :: newblogList
+2020-08-06 09:40:38.107  INFO 1740 --- [http-nio-8080-exec-5] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.ArchiveShowController.archives', args=[{}]}
+2020-08-06 09:40:39.410  INFO 1740 --- [http-nio-8080-exec-5] com.yalexin.aspect.LogAspect             : result------>archives
+2020-08-06 09:40:39.674  INFO 1740 --- [http-nio-8080-exec-2] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.IndexController.newblogs', args=[{}]}
+2020-08-06 09:40:40.072  INFO 1740 --- [http-nio-8080-exec-2] com.yalexin.aspect.LogAspect             : result------>_fragments :: newblogList
+2020-08-06 09:40:41.876  INFO 1740 --- [http-nio-8080-exec-8] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.ArchiveShowController.archives', args=[{}]}
+2020-08-06 09:40:43.180  INFO 1740 --- [http-nio-8080-exec-8] com.yalexin.aspect.LogAspect             : result------>archives
+2020-08-06 09:40:43.539  INFO 1740 --- [http-nio-8080-exec-6] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.IndexController.newblogs', args=[{}]}
+2020-08-06 09:40:43.871  INFO 1740 --- [http-nio-8080-exec-6] com.yalexin.aspect.LogAspect             : result------>_fragments :: newblogList
+2020-08-06 09:40:48.509  INFO 1740 --- [http-nio-8080-exec-10] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.ArchiveShowController.archives', args=[{}]}
+2020-08-06 09:40:49.849  INFO 1740 --- [http-nio-8080-exec-10] com.yalexin.aspect.LogAspect             : result------>archives
+2020-08-06 09:40:50.028  INFO 1740 --- [http-nio-8080-exec-8] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.IndexController.newblogs', args=[{}]}
+2020-08-06 09:40:50.431  INFO 1740 --- [http-nio-8080-exec-8] com.yalexin.aspect.LogAspect             : result------>_fragments :: newblogList
+2020-08-06 09:41:07.051  INFO 1740 --- [http-nio-8080-exec-10] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.ArchiveShowController.archives', args=[{}]}
+2020-08-06 09:41:08.329  INFO 1740 --- [http-nio-8080-exec-10] com.yalexin.aspect.LogAspect             : result------>archives
+2020-08-06 09:41:08.620  INFO 1740 --- [http-nio-8080-exec-5] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.IndexController.newblogs', args=[{}]}
+2020-08-06 09:41:08.931  INFO 1740 --- [http-nio-8080-exec-5] com.yalexin.aspect.LogAspect             : result------>_fragments :: newblogList
+2020-08-06 09:41:26.830  INFO 1740 --- [http-nio-8080-exec-3] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.ArchiveShowController.archives', args=[{}]}
+2020-08-06 09:41:28.139  INFO 1740 --- [http-nio-8080-exec-3] com.yalexin.aspect.LogAspect             : result------>archives
+2020-08-06 09:41:28.587  INFO 1740 --- [http-nio-8080-exec-9] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.IndexController.newblogs', args=[{}]}
+2020-08-06 09:41:28.892  INFO 1740 --- [http-nio-8080-exec-9] com.yalexin.aspect.LogAspect             : result------>_fragments :: newblogList
+2020-08-06 09:41:41.487  INFO 1740 --- [http-nio-8080-exec-7] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.ArchiveShowController.archives', args=[{}]}
+2020-08-06 09:41:43.539  INFO 1740 --- [http-nio-8080-exec-7] com.yalexin.aspect.LogAspect             : result------>archives
+2020-08-06 09:41:43.938  INFO 1740 --- [http-nio-8080-exec-5] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.IndexController.newblogs', args=[{}]}
+2020-08-06 09:41:44.232  INFO 1740 --- [http-nio-8080-exec-5] com.yalexin.aspect.LogAspect             : result------>_fragments :: newblogList
+2020-08-06 09:41:49.883  INFO 1740 --- [http-nio-8080-exec-8] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/blog/9', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.IndexController.blog', args=[9, {}]}
+2020-08-06 09:41:50.789  INFO 1740 --- [http-nio-8080-exec-8] com.yalexin.aspect.LogAspect             : result------>blog
+2020-08-06 09:41:51.424  INFO 1740 --- [http-nio-8080-exec-4] com.yalexin.aspect.LogAspect             : request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', className='com.yalexin.web.IndexController.newblogs', args=[{}]}
+2020-08-06 09:41:51.729  INFO 1740 --- [http-nio-8080-exec-4] com.yalexin.aspect.LogAspect             : result------>_fragments :: newblogList
+2020-08-06 09:42:43.176  INFO 1740 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-06 09:42:43.176  INFO 1740 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-06 09:42:43.176  INFO 1740 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Shutdown initiated...
+2020-08-06 09:42:43.176  INFO 1740 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Shutdown completed.
+2020-08-06 09:42:44.449  INFO 1740 --- [restartedMain] com.yalexin.BlogApplication              : Starting BlogApplication on DESKTOP-E2AV1HM with PID 1740 (C:\Users\YaleXin\IdeaProjects\blog_copy\target\classes started by YaleXin in C:\Users\YaleXin\IdeaProjects\blog_copy)
+2020-08-06 09:42:44.449 DEBUG 1740 --- [restartedMain] com.yalexin.BlogApplication              : Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-08-06 09:42:44.449  INFO 1740 --- [restartedMain] com.yalexin.BlogApplication              : The following profiles are active: dev
+2020-08-06 09:42:45.636  INFO 1740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-06 09:42:45.761  INFO 1740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125ms. Found 5 JPA repository interfaces.
+2020-08-06 09:42:46.433  INFO 1740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-06 09:42:46.433  INFO 1740 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-06 09:42:46.433  INFO 1740 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-06 09:42:46.464  INFO 1740 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-06 09:42:46.464  INFO 1740 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2015 ms
+2020-08-06 09:42:46.699  INFO 1740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Starting...
+2020-08-06 09:42:47.873  INFO 5304 --- [main] com.yalexin.BlogApplicationTests         : Starting BlogApplicationTests on DESKTOP-E2AV1HM with PID 5304 (started by YaleXin in C:\Users\YaleXin\IdeaProjects\blog_copy)
+2020-08-06 09:42:47.873 DEBUG 5304 --- [main] com.yalexin.BlogApplicationTests         : Running with Spring Boot v2.1.15.RELEASE, Spring v5.1.16.RELEASE
+2020-08-06 09:42:47.873  INFO 5304 --- [main] com.yalexin.BlogApplicationTests         : The following profiles are active: dev
+2020-08-06 09:42:48.029  INFO 1740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Start completed.
+2020-08-06 09:42:48.061  INFO 1740 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-08-06 09:42:49.014  INFO 1740 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-06 09:42:49.576  INFO 1740 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-06 09:42:50.045  INFO 1740 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-08-06 09:42:51.357  INFO 5304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-06 09:42:51.467  INFO 1740 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 09:42:51.514  WARN 1740 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-06 09:42:51.607  INFO 1740 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-06 09:42:51.795  INFO 5304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 375ms. Found 5 JPA repository interfaces.
+2020-08-06 09:42:52.326  INFO 1740 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-06 09:42:52.435  INFO 1740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-06 09:42:52.435  INFO 1740 --- [restartedMain] com.yalexin.BlogApplication              : Started BlogApplication in 8.158 seconds (JVM running for 5888.049)
+2020-08-06 09:42:52.451  INFO 1740 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-08-06 09:42:55.441  INFO 5304 --- [main] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Starting...
+2020-08-06 09:42:56.936  INFO 5304 --- [main] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Start completed.
+2020-08-06 09:42:57.139  INFO 5304 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-08-06 09:42:57.342  INFO 5304 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.17.Final}
+2020-08-06 09:42:57.358  INFO 5304 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-08-06 09:42:57.654  INFO 5304 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-08-06 09:42:58.483  INFO 5304 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-06 09:42:59.998  INFO 5304 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-06 09:43:01.248  INFO 5304 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-08-06 09:43:07.035  INFO 5304 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 09:43:07.238  WARN 5304 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-06 09:43:07.488  INFO 5304 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-06 09:43:08.707  INFO 5304 --- [main] com.yalexin.BlogApplicationTests         : Started BlogApplicationTests in 22.274 seconds (JVM running for 25.5)
+2020-08-06 09:43:09.644  INFO 5304 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-06 09:43:09.785  INFO 5304 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-06 09:43:09.863  INFO 5304 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Shutdown initiated...
+2020-08-06 09:43:10.004  INFO 5304 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : DatebookHikariCP - Shutdown completed.

@@ -1,0 +1,16 @@
+package com.yalexin.dao;
+
+import com.yalexin.entity.Comment;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+
+import java.util.List;
+
+/**
+ * Author：Yalexin
+ * Email： 181303209@yzu.edu.cn
+ */
+public interface CommentRepository extends JpaRepository<Comment,Long>, JpaSpecificationExecutor<Comment> {
+    List<Comment> findByBlogIdAndParentCommentNull(Long id, Sort sort);
+}

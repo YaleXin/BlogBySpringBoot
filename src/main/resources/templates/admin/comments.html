@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width,initial-scale=1.0">
+    <title>评论管理</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.2.4/semantic.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../static/css/me.css">
+</head>
+
+<body>
+
+
+<!-- 导航 -->
+<nav th:replace="admin/_fragments :: menu(4)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item">管理后台</h2>
+            <a href="#" class="active m-item item m-mobile-hide"><i class=" home icon"></i>博客</a>
+            <a href="#" class=" m-item item m-mobile-hide"><i class=" idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class=" tags icon"></i>标签</a>
+
+            <div class="right menu m-item item m-mobile-hide">
+                <div class="ui dropdown item">
+                    <div class="text">
+                        <img class="ui avatar image" src="../../static/images/bg.jpg">
+                        Yalexin
+                    </div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a href="#" class="item">注销</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui black icon button m-right-top m-mobile-show menu toggle">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+
+<!-- 中间内容 -->
+<div class="m-padded-tb-big m-container-small">
+    <div class="ui container" >
+
+        <div class="ui success message" th:unless="${#strings.isEmpty(message)}">
+            <i class="close icon"></i>
+            <div class="header">提示：</div>
+            <p th:text="${message}">恭喜，操作成功</p>
+        </div>
+
+
+        <div class="ui segment secondary form">
+            <!--通过点击上一页和下一页将页码和筛选条件传递-->
+            <input type="hidden" name="page">
+            <div class="inline fields">
+                <div class="field">
+                    <input type="text" name="nickname" placeholder="作者">
+                </div>
+                <div class="field">
+                    <input type="text" name="email" placeholder="邮箱">
+                </div>
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" checked id="audited" name="audited">
+                        <label for="audited">已审核</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <button type="button" id="search-btn" class="ui mini teal basic button"><i class="search icon"></i>搜索
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="table-container">
+            <table th:fragment="commentList" class="ui fixed unstackable center aligned celled table">
+                <thead>
+                <tr>
+                    <th>作者</th>
+                    <th>邮箱</th>
+                    <th>内容</th>
+                    <th>所在文章</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="comment : ${page.content}">
+                    <td th:text="${comment.nickname}">nickname</td>
+                    <td th:text="${comment.email}">nickname@11.com</td>
+                    <td th:text="${comment.content}">content</td>
+                    <td ><a target="_blank" th:href="@{/blog/{id}(id=${comment.blog.id})}" th:text="${comment.blog.title}">content</a></td>
+                    <td>
+                        <a href="#" th:href="@{/admin/comments/{id}/edit(id=${comment.id})}"
+                           class="ui mini teal basic button">编辑</a>
+                        <a href="#" th:href="@{/admin/comments/{id}/delete(id=${comment.id})}"
+                           class="ui mini red basic button">删除</a>
+                        <a href="#" th:href="@{/admin/comments/audit/{id}(id=${comment.id})}"
+                           class="ui mini red basic button" th:text="${comment.audited} ?  '下架评论' : '通过审核'">通过审核</a>
+                    </td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <th colspan="5" class="left aligned">
+                        <div class="ui mini pagination menu" th:if="${page.totalPages}>1">
+                            <!-- th:unless="${page.first}" 除非是第一页，否则显示-->
+                            <a onclick="page(this)" th:attr="data-page=${page.number} - 1" class="item"
+                               th:unless="${page.first}">上一页</a>
+                            <a onclick="page(this)" th:attr="data-page=${page.number} + 1" class="item"
+                               th:unless="${page.last}">下一页</a>
+                        </div>
+
+                    </th>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<br>
+<br>
+<!-- 底部 -->
+<footer th:replace="admin/_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui container center aligned ">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="../../static/images/WeChat.jpg" class="ui rounded image" alt=""
+                             style="width: 100px;">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">用户故事</a>
+                    <a href="#" class="item">用户故事</a>
+                    <a href="#" class="item">用户故事</a>
+                </div>
+
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">请联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Email:me@yalexin.top</a>
+                    <a href="#" class="item">qq:495592364</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">介绍</h4>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">这是SpringBoot + semantic-ui 开发的个人博客</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright©2020-2020 by Yalexin</p>
+    </div>
+</footer>
+
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+<script src="../../static/js/myAnimation.js" th:src="@{/js/myAnimation.js}"></script>
+
+<script>
+
+
+    $('.ui.dropdown').dropdown({
+      on : 'hover'
+    });
+
+		$('.message .close')
+		.on('click',function(){
+			$(this)
+			.closest('.message')
+			.transition('fade');
+		});
+        function page(obj){
+            $("[name='page']").val($(obj).data("page"));
+            loaddata();
+	    };
+
+
+        $('#search-btn').click(function(){
+	        $("[name='page']").val(0);
+	        loaddata();
+	    });
+
+	   function loaddata() {
+            $("#table-container").load(/*[[@{/admin/comments/search}]]*/"/admin/comments/search",{
+                nickname : $("[name='nickname']").val(),
+                email : $("[name='email']").val(),
+                audited : $("[name='audited']").prop('checked'),
+                page : $("[name='page']").val()
+            });
+        }
+
+</script>
+
+</body>
+
+</html>

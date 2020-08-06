@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width,initial-scale=1.0">
+    <title>博客管理</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.2.4/semantic.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../static/css/me.css">
+</head>
+
+<body>
+
+
+<!-- 导航 -->
+<nav th:replace="admin/_fragments :: menu(0)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item">管理后台</h2>
+            <a href="#" class="active m-item item m-mobile-hide"><i class=" home icon"></i>博客</a>
+            <a href="#" class=" m-item item m-mobile-hide"><i class=" idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class=" tags icon"></i>标签</a>
+
+            <div class="right menu m-item item m-mobile-hide">
+                <div class="ui dropdown item">
+                    <div class="text">
+                        <img class="ui avatar image" src="../../static/images/bg.jpg">
+                        Yalexin
+                    </div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a href="#" th:href="@{/admin/logout}" class="item">注销</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui black icon button m-right-top m-mobile-show menu toggle">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+<!--<div class="ui attached teal pointing menu">-->
+<!--    <div class="ui container">-->
+<!--        <div class="right menu">-->
+<!--            <a href="#" class=" item">发布</a>-->
+<!--            <a href="#" class="active item">列表</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!-- 中间内容 -->
+<div class="m-padded-tb-big m-container-small">
+    <div class="ui container">
+        <div class="ui success large message">
+            <h2><span th:text="${userNickname}"></span>,你好</h2>
+            <p>登录成功</p>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<!-- 底部 -->
+
+<footer th:replace="admin/_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui container center aligned ">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="../../static/images/WeChat.jpg" class="ui rounded image" alt=""
+                             style="width: 100px;">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">用户故事</a>
+                    <a href="#" class="item">用户故事</a>
+                    <a href="#" class="item">用户故事</a>
+                </div>
+
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">请联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Email:me@yalexin.top</a>
+                    <a href="#" class="item">qq:495592364</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">介绍</h4>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">这是SpringBoot + semantic-ui 开发的个人博客</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright©2020-2020 by Yalexin</p>
+    </div>
+</footer>
+
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+<script src="../../static/js/myAnimation.js" th:src="@{/js/myAnimation.js}"></script>
+
+<script>
+
+		$('.ui.dropdown').dropdown({
+			on: 'hover'
+		});
+		$('.ui.dropdown').dropdown();
+
+</script>
+</body>
+
+</html>

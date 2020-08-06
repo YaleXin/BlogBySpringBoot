@@ -1,0 +1,98 @@
+spring:
+  datasource:
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 15
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: DatebookHikariCP
+      max-lifetime: 120000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:
+    username: root
+    password: 123456
+
+  mail:
+    username: 
+    # 授权码，不是QQ登录密码
+    password: 
+    host: 
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          ssl:
+            enable: true
+            socketFactory:
+              port: 465
+              class: javax.net.ssl.SSLSocketFactory
+    port: 465
+    protocol: smtp
+    default-encoding: utf-8
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+        ddl-auto: create
+  thymeleaf:
+    mode: HTML
+    cache: false
+  mvc:
+    date-format: yyy-MM-dd HH:mm:ss
+  profiles:
+    #    指定激活的版本
+    active:
+      - dev
+
+
+
+server:
+  compression:
+    enabled: true
+
+    mime-types:
+      - application/json
+      - application/xml
+      - text/html
+      - text/xml
+      - text/plain
+
+
+########## 自定义 ############
+# 是否开启邮件通知被回复的层主
+comment_email_enable: true
+comment.avatar: /images/avatar.png
+blog_host: www.yelexin.top
+blogger_nickname: 黄阿信
+# 发送邮件的邮箱
+email_from: 495592364@qq.com
+# 接收通知邮件的邮箱
+email_receive: 495592364@qq.com
+
+
+
+# -------------  友情链接 -----------
+friendsconfig:
+  friends:
+    - info: 黄阿信
+      desc: 黄阿信的博客
+      avatar: https://q.yalexin.top/cat_mouse.jpg
+      addr: www.yalexin.top
+    - info: 水寒的博客
+      desc: 物联网应用开发
+      avatar: https://dp2px.com/images/download_head.png
+      addr: dp2px.com
+    - info: 新逸Cary
+      desc: 一个专注技术的程序猿
+      avatar: https://blog.xinac.cn/avatar
+      addr: blog.xinac.cn/
+
+
+pictrues:
+  ps: https://q.yalexin.top/1.jpg,https://q.yalexin.top/2.jpg,https://q.yalexin.top/3.jpg,https://q.yalexin.top/4.jpg,https://q.yalexin.top/5.jpg,https://q.yalexin.top/6.jpg,https://q.yalexin.top/7.jpg,https://q.yalexin.top/8.jpg,https://q.yalexin.top/9.jpg,https://q.yalexin.top/10.jpg
