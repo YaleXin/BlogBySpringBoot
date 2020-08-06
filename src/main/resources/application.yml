@@ -68,7 +68,7 @@ server:
 # 是否开启邮件通知被回复的层主
 comment_email_enable: true
 comment.avatar: /images/avatar.png
-blog_host: www.yelexin.top
+blog_host: www.yalexin.top
 blogger_nickname: 黄阿信
 # 发送邮件的邮箱
 email_from: 495592364@qq.com

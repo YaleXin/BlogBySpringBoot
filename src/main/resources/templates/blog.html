@@ -780,7 +780,7 @@ h5,h6{font-size:1em;}
 	var url =/*[[@{/blog/{id}(id=${blog.id})}]]*/"";
     //console.log(serurl+url);
     var qrcode = new QRCode("qrcode", {
-        text: serurl + url,
+        text: 'http://' + serurl + url,
         width: 110,
         height: 110,
         colorDark: "#000000",
