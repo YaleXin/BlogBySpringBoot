@@ -35,6 +35,7 @@
 		</a>
 	</nav>
 
+	<input type="hidden" name="page">
 
 	<!-- 中间内容 -->
 	<div class="m-padded-tb-big m-container-small">
@@ -322,12 +323,12 @@
 			<div class="ui attached segment" th:if="${page.totalPages}>1">
 				<div class="ui middle aligned two column grid">
 					<div class="column">
-						<a href="#" class="ui mini teal basic button" th:unless="${page.first}"
-						   th:href="@{/(page=${page.number} - 1)}">上一页</a>
+						<a class="ui mini teal basic button" onclick="page(this)" th:attr="data-page=${page.number} - 1"
+						   th:unless="${page.first}">上一页</a>
 					</div>
 					<div class="right aligned column ">
-						<a href="#" class="ui mini teal basic button" th:unless="${page.last}"
-						   th:href="@{/(page=${page.number} + 1)}">下一页</a>
+						<a class="ui mini teal basic button" onclick="page(this)" th:attr="data-page=${page.number} + 1"
+						   th:unless="${page.last}">下一页</a>
 					</div>
 				</div>
 			</div>
@@ -378,7 +379,13 @@
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
 	<!--/*/</th:block>/*/-->
-
+	<script th:inline="javascript">
+	    function page(obj){
+			var pagenum = $(obj).data("page");
+			var myaction = '/search?page=' + pagenum;
+            $("[name='search']").attr("action", myaction).submit()
+	    };
+	</script>
 </body>
 
 </html>

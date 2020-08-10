@@ -18,7 +18,7 @@
 
 - [`prism（代码高亮）`](https://prismjs.com/)
 
-- [`qrcode`](http://jeromeetienne.github.com/jquery-qrcode/)
+- [`qrcode`]( https://github.com/jeromeetienne/jquery-qrcode )
 
 - [`semanticCalendar`](http://github.com/semantic-org/semantic-ui/)
 
