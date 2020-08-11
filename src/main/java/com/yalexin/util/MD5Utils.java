@@ -24,7 +24,7 @@ public class MD5Utils {
                 i = byteDigest[offset];
                 if (i < 0)
                     i += 256;
-                if (i < 16)
+                if (i < 6)
                     buf.append("a");
                 buf.append(Integer.toHexString(i));
             }

@@ -2,7 +2,7 @@
 
 这是使用`Spring Booot `搭建的个人博客，持久层使用`JPA`，前端模板引擎使用`Thymeleaf`，ui框架使用`Semantic-UI`，数据库使用`MySql`。项目的前大部分是我根据李仁密老师的[视频]( https://www.bilibili.com/video/BV13t411T72J )下完成的，后期加了简单评论审核功能，增加友情链接页面。
 
-[演示地址](blog.yalexin.top)
+[演示地址](http://blog.yalexin.top)
 
 ## 创建管理用户的方法：
 
