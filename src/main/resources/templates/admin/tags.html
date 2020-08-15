@@ -83,9 +83,9 @@
                 <th colspan="6" class="left aligned">
                     <div class="ui mini pagination menu" th:if="${page.totalPages}>1">
                         <!-- th:unless="${page.first}" 除非是第一页，否则显示-->
-                        <a href="" th:href="@{/admin/types(page=${page.number} - 1)}" class="item"
+                        <a href="" th:href="@{/admin/tags(page=${page.number} - 1)}" class="item"
                            th:unless="${page.first}">上一页</a>
-                        <a href="" th:href="@{/admin/types(page=${page.number} + 1)}" class="item"
+                        <a href="" th:href="@{/admin/tags(page=${page.number} + 1)}" class="item"
                            th:unless="${page.last}">下一页</a>
                     </div>
                     <a href="" th:href="@{/admin/tags/input}" class="ui mini right floated teal basic button">新增</a>
